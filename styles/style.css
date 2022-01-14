@@ -1,7 +1,84 @@
-* {
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap');
+
+body {
   margin: 0;
   padding: 0;
+  font-family: 'Poppins', sans-serif;
+  background-color: #e3e2dd;
 }
-h1 {
-  color: slateblue;
+main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+/*------------------------------
+ favorite artist & watchlist styles 
+ ----------------------------------*/
+.container {
+  background-color: #ffffff;
+  width: 870px;
+  border-radius: 5px;
+  margin-top: 21px;
+  color: #44445c;
+  padding: 30px;
+}
+.primary-title {
+  font-size: 24px;
+  color: #03c6c7;
+  font-size: 24px;
+  margin-top: 3px;
+}
+.artists {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-row-gap: 30px;
+  margin-bottom: 30px;
+}
+.artist img {
+  width: 96px;
+  height: 96px;
+  border-radius: 100%;
+}
+.artist {
+  display: flex;
+  align-items: center;
+}
+.artist-name {
+  margin-left: 16px;
+  font-size: 18px;
+}
+hr {
+  border: 1px solid #d1d1d1;
+  margin-bottom: 27px;
+}
+/*  watchlist  */
+.movies {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-row-gap: 5px;
+}
+.movie {
+  display: flex;
+  margin: 5px;
+}
+.movie .poster img {
+  width: 96px;
+  height: 142px;
+  margin-left: 5px;
+  margin-top: 5px;
+  border-radius: 5px;
+}
+.movie-info {
+  margin-left: 16px;
+}
+.movie-name {
+  font-size: 18px;
+  color: #44445c;
+}
+.lister-item-details {
+  text-overflow: ellipsis;
+  overflow: hidden;
+  width: 250px;
+  height: 1.2em;
+  white-space: nowrap;
 }
