@@ -87,3 +87,10 @@ strong a {
   font-size: 16px;
   color: #44445c;
 }
+/* ---------------------------------
+        recommended movies
+----------------------------------- */
+.recommended-movie img {
+  width: 150px;
+  height: 180px;
+}
